@@ -49,6 +49,11 @@ body{
     height: 700px;
 }
 
+.dot3{
+    display: block;
+    margin-left: 70px;
+}
+
 .camera-space{
    background-color: rgb(255, 255, 255);
    width: 13%;
@@ -251,4 +256,5 @@ p{
 }
 
     .attribution { font-size: 11px; text-align: center; }
+
     .attribution a { color: hsl(228, 45%, 44%); }

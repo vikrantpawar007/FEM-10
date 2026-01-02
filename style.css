@@ -1,0 +1,254 @@
+body{
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-right, .bg-left{
+    position: absolute;
+    z-index: -1;
+    width: 35%;
+    height: 40em;
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+
+.bg-right{
+    bottom: 0;
+    right: -100px;
+    border-radius: 250px 250px 0px 0px;
+    opacity: 0.1;
+}
+
+.bg-left{
+    top: 0;
+    left: -80px;
+    border-radius: 0px 0px 250px 250px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 10px 200px;
+}
+
+.mobile-layout{
+    background-color: hsl(270, 20%, 96%);
+    border: 15px solid white;
+    margin: 4em 2em 3em;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px #ccc;
+    width: 340px;
+    height: 700px;
+}
+
+.camera-space{
+   background-color: rgb(255, 255, 255);
+   width: 13%;
+   padding: 15px;
+   left: 23%;
+   top: 78px;
+   height: 1em;
+   position: absolute;
+   border-radius: 15px;
+}
+
+.header-container{
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 25px 25px 10px 10px;
+    display: flex;
+    padding: 30px 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+
+.name{font-size: 16px;}
+.status{font-size: 10px; padding-top: 2px; color: hsl(270, 20%, 96%);}
+
+.avatar{
+    width: 35px;
+    height: auto;
+    border-radius: 45px;
+    border: 2px solid white;
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.first-message{
+    background-color:hsl(275, 100%, 92%);
+    color: hsl(276, 55%, 52%);
+    width: 70%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.secound-message{
+    background-color:hsl(275, 100%, 92%);
+    color: hsl(276, 55%, 52%);
+    width: 70%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.photos{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.third-message{
+    background-color:hsl(0, 100%, 100%);
+    color: hsl(270, 7%, 64%);
+    width: 70%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    margin:0px 85px;
+    box-shadow: 5px 5px 10px 0px hsl(206, 6%, 79%);
+}
+
+img{
+    border-radius: 15px;
+    width: 50px;
+}
+
+.fourth-message{
+    background-color:hsl(0, 100%, 100%);
+    color: hsl(270, 7%, 64%);
+    width: 70%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    margin:0px 85px;
+    box-shadow: 5px 5px 10px 0px hsl(206, 6%, 79%);
+}
+
+.fifth-message{
+    background-color:hsl(275, 100%, 92%);
+    color: hsl(276, 55%, 52%);
+    width: 70%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.radio-button{   
+    margin: 0 0.5em 0 0;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    border: 2px solid hsl(289, 100%, 72%);
+}
+
+.price-option{
+    display: flex;
+    background-image: linear-gradient(50deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    padding: 10px;
+    font-size: 13px;
+    width: 70%;
+    color: white;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 0px;
+}
+
+span{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.type-bar{
+    height: 2.6em;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 35px;
+}
+
+input {
+    padding-left: 1.5em;
+    width: 100%;
+    border-radius: 2em;
+    border: none;
+}
+
+.send {
+    color: white;
+    background-color: hsl(271, 36%, 24%);
+    padding: 10px;
+    border-radius: 25px;
+    align-items: center;
+    width: 40px;
+}
+
+h1{
+    color: hsl(271, 36%, 24%);
+}
+
+p{
+    color: hsl(270, 7%, 64%);
+    margin-top: 20px;
+}
+
+.content{
+    flex: 1;
+}
+
+@media (max-width:700px) {
+    .bg-right{
+        display: none;
+    }
+
+    .bg-left{
+        left: 0px;
+        width: 60%;
+    }
+
+    .container{
+        flex-direction: column;
+        padding: 35px;
+        gap: 20px;
+    }
+
+    h1{
+        text-align: center !important;
+    }
+
+    p{
+        text-align: center !important;
+    }
+
+    .camera-space{
+        width: 55%;
+        padding: 15px;
+        left: 25%;
+        top: 100px;
+        height: 1em;
+        border-radius: 15px;
+    }
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
